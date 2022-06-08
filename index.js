@@ -11,7 +11,6 @@ function sendOtp(){
     xhr.onreadystatechange = function(){
         document.getElementById("mno").innerHTML = "Sending....";
         if(this.status == 200 && this.readyState == 4){
-            // alert(this.response);
             document.getElementById("mno").innerHTML = "Sent Successfully....";
             otpGlobal =this.response;
         } 

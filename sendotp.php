@@ -11,8 +11,8 @@ $otp = rand(1111,9999);
 
 
 // Your Account SID and Auth Token from twilio.com/console
-$sid = 'AC13ea722acd9e757acd1da4af91bc6e0c';
-$token = '9dfad343e519f44a21911b64b493827f';
+$sid = 'your_sid';
+$token = 'your_token';
 $client = new Client($sid, $token);
 
 // Use the client to do fun stuff like send text messages!
