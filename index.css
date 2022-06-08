@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    gap: 0.5rem;
+    background-color: rgba(255, 106, 0, 0.924);
+    transition: 1s;
+}
+.container-sec .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container-sec .row img{
+    width: 100%;
+    height:180px;
+}
+.container-sec{
+    /* flex-grow: 10; */
+    color: white;
+    min-width: 80%;
+    margin: 1rem 7rem 1rem 0;
+    overflow-x: hidden;
+}
+.head{
+    min-width: 100%;
+}
+.title{
+    background-color: black;
+    padding:0.7rem 0.2rem;
+    font-weight: normal
+}
+.digit{
+    font-size: 3.5rem;
+    font-weight: normal
+}
+.register{
+    display: flex;
+    gap: 15rem;
+    margin: 1rem 0;
+}
+.register p{
+    font-size: 1.5rem;
+}
+.form,.form2{
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 5rem;
+    overflow-x: hidden;
+    align-items: center;
+    padding: 2rem;
+}
+.add-b{
+    background-color: skyblue;
+    padding: 1rem 0.3rem;
+    font-weight: normal;
+}
+
+#btn-step1,
+#btn-step2-prev,
+#btn-step2-submit,
+#btn-step3-prev,
+#btn-step3-submit,
+#contactbtn{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border: 1px solid white;
+}
+
+.form input[type="number"],
+.form input[type="text"],
+.form1 input[type="number"],
+.form1 input[type="text"],
+.form2 input[type="number"],
+.form2 input[type="text"]
+{
+    padding: 0.2rem;
+    border: 2px solid black;
+}
+.form1 input[type="date"]{
+    padding: 0.2rem;
+    border: 2px solid black;
+    width: 178px;
+}
+.nav{
+    margin-top: 1rem;
+    min-width: 10%;
+    max-width: 10%;
+}
+.nav .navbar{
+    list-style-type: none;
+    /* height: 100%; */
+    background-color: white;
+}
+.nav .navbar li a{
+    text-decoration: none;
+    color: black;
+}
+.nav .navbar li{
+    border: 1px solid black;
+    margin: 0.7rem 0;
+    padding: 0.3rem 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btn-nav-open,#btn-nav-close{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#btn-nav-open i,#btn-nav-close i{
+    font-size: 2.8rem;
+}
+.document-detail .row,
+.personal-detail .row,
+.account-detail .row{
+    display: flex;
+    gap: 7rem;
+    margin: 1rem 0;
+}
+
+#step2,#step3{
+    margin-top: 1rem;
+}
+.form1{
+    background-color: white;
+    color: black;
+    padding: 2rem;
+}
+#step2,#step3{
+    display: none;
+}
+span{
+    color:red;
+    font-size: 0.7rem;
+}
+.captcha{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+#show-captcha{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#show-captcha{
+    border: 2px solid red;
+    text-align: center;
+    width: 200px;
+}
+#btn-nav-close{
+    display: none;
+}
+#ulnav{
+    display: none;
+}
+#captabtn{
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.entrydata{
+    background-color: white;
+}
+#otpbtn{
+    width: 178px;
+}
+#setotp{
+    padding-top: 2.5rem;
+}
+.aboutcontent{
+    background-color: white;
+    color: black;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+.aboutcontent p{
+    padding: 1rem;
+}
+.aboutgrid .row {
+    gap: 1rem;
+}
+
+.container-sec .contactussection{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.subinput{
+    margin: 1rem 0;
+}
+.setaddress{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.subinput textarea{
+    resize: none;
+}
+.leftsec input[type="text"],.leftsec input[type="email"],.leftsec textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.rightsec .fab{
+    display: flex;
+    align-items: center;
+    gap:2.5rem;
+    width: 100%;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+#contactbtn{
+    margin: 0;
+}
+@media screen and (max-width: 550px) {
+
+    .container-sec .contactussection{
+        flex-direction: column;
+    }
+
+    #ulnav{
+        margin: 0 1rem;
+    }
+    #setotp{
+        padding-top: 0;
+    }
+    #otpbtn{
+        width: 100%;
+    }
+    #captabtn{
+        width: 100%;
+    }
+    .container-sec .row{
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+    .nav{
+        position: relative;
+        min-width: 100%;
+    }
+    .container-sec{
+        margin: 1rem;
+    }
+    .register{
+        flex-direction: column;
+        gap: 2rem;
+        margin:1rem 0;
+    }
+    .form,.form2{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .document-detail .row,
+    .personal-detail .row,
+    .account-detail .row{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+  
+    .document-detail h3,.personal-detail h3{
+        text-align: center;
+    }
+    .subrow{
+        width: 100%;
+    }
+    .form1 input[type="file"]{
+        width: 100%;
+    }
+    .form input[type="number"],
+    .form input[type="text"],
+    .form1 input[type="number"],
+    .form1 input[type="text"],
+    .form1 input[type="date"],
+    .form2 input[type="number"],
+    .form2 input[type="text"]{
+        width: 100%;
+    }
+    #btn-step1,
+    #btn-step2-prev,
+    #btn-step2-submit,
+    #btn-step3-prev,
+    #btn-step3-submit{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    #btn-step3-prev,#btn-step2-prev{
+        margin-bottom: 0.5rem;
+    }
+   
+    .nav .navbar li{
+        border: 1px solid black;
+        margin: 0.7rem 0;
+        padding: 0.4rem 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    #show-captcha{
+        border: 2px solid red;
+        text-align: center;
+        width: 100%;
+    }
+    #btn-nav-open,#btn-nav-close{
+        width: fit-content;
+        padding: 0.7rem 2rem;
+    }
+    #btn-nav-close{
+        display: none;
+    }
+    .nav{
+        text-align: center;
+    }
+    .navbtn{
+        padding: 0 1rem;
+        text-align: start;
+    }
+    body{
+        flex-direction: column;
+    }
+}
